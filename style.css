@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1,
+h2 {
+  font-size: 190%;
+}
+
+body {
+  background-color: rgb(204, 194, 194);
+}
+
+/************HOME****************/
+
+.screen {
+  height: 100vh;
+  width: 100%;
+}
+
+.homePage {
+  height: 95vh;
+  width: 40%;
+  margin: 17px 0;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+  background-image: url(./assets/retro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin: 12px auto;
+}
+
+.create {
+  padding: 18% 0;
+}
+.create h1 {
+  padding: 5% 0;
+}
+
+.create h1 span {
+  color: #0163a3;
+}
+
+.btnLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
+}
+
+.btnLink ul {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.btnLink ul li {
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  padding: 5px 25px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  margin: 10px 0;
+  gap: 50px;
+  transition: 0.5s;
+}
+
+.btnLink ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnLink ul li:hover {
+  background-color: rgb(80, 79, 79);
+}
+
+/************LOGIN****************/
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+.login {
+  height: 95vh;
+  width: 40%;
+  margin: 17px 0;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+  background-image: url(./assets/writer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin: 12px auto;
+  padding: 30px 0;
+}
+
+.loginOption {
+  margin-top: 7%;
+}
+
+.loginOption h1 span {
+  color: #0163a3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+input {
+  height: 30px;
+  width: 50%;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin-top: 3%;
+  font-weight: bold;
+  font-size: 10px;
+  gap: 10px;
+}
+
+label {
+  margin: 1.5%;
+  color: black;
+  font-weight: bold;
+  font-size: 115%;
+  color: white;
+}
+
+.log {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.loginBtn {
+  height: 30px;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-style: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.loginBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.log h3 {
+  font-size: 17px;
+}
+.log a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5px;
+  text-decoration: none;
+  transition: 0.5px;
+}
+.red a {
+  color: black;
+  transition: 0.5s;
+}
+
+.red a:hover {
+  color: rgb(223, 11, 11);
+  border-bottom: 2px solid rgb(223, 11, 11);
+}
+
+.green a {
+  color: black;
+  transition: 0.5s;
+}
+.green a:hover {
+  color: rgb(6, 133, 6);
+  border-bottom: 2px solid rgb(6, 133, 6);
+}
+
+/**********SIGN UP*************/
+
+.signUp {
+  height: 95vh;
+  width: 40%;
+  margin: 17px 0;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+  background-image: url(./assets/task.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin: 12px auto;
+}
+
+.form {
+  padding: 40px 40px;
+}
+
+.form h1 span {
+  color: #0163a3;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.form-control label {
+  color: #777;
+  display: block;
+  margin: 5px;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.form-control.success input {
+  border-color: rgb(4, 211, 4);
+}
+.form-control.error input {
+  border-color: rgb(231, 50, 50);
+}
+.form-control small {
+  color: rgb(231, 50, 50);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
+.form button {
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form button:hover {
+  background-color: #3498db;
+  border: 2px solid #3498db;
+}
